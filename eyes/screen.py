@@ -40,6 +40,7 @@ _MAX_WINDOW_AREA = 0.85
 def _window_rect(hwnd: int) -> tuple[int, int, int, int] | None:
     """Честные границы окна (без тени DWM), иначе обычный GetWindowRect."""
     try:
+        import ctypes
         from ctypes import wintypes
 
         user32 = ctypes.windll.user32
@@ -63,6 +64,7 @@ def foreground_window() -> dict:
     """Заголовок, процесс, hwnd и прямоугольник активного окна."""
     info = {"hwnd": 0, "title": "", "process": "", "rect": None}
     try:
+        import ctypes
         from ctypes import wintypes
 
         user32 = ctypes.windll.user32

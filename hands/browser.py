@@ -190,6 +190,9 @@ def _page_info(url: str, limit: int = 1200) -> tuple[str, str]:
 
 def _open_in_main_browser(url: str) -> bool:
     """Открыть вкладку в основном браузере (то же окно, без нового процесса)."""
+    parsed = urllib.parse.urlparse(url or "")
+    if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc:
+        return False
     try:
         if webbrowser.open_new_tab(url):
             return True
@@ -470,8 +473,16 @@ class BrowserSession:
     @staticmethod
     def _normalize(url: str) -> str:
         url = (url or "").strip()
-        if url and not url.startswith(("http://", "https://")):
+        if not url:
+            return ""
+        parsed = urllib.parse.urlparse(url)
+        if not parsed.scheme:
+            if "://" in url:
+                return ""
             url = "https://" + url.lstrip("/")
+            parsed = urllib.parse.urlparse(url)
+        if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc:
+            return ""
         return url
 
     def open(self, url: str) -> str:
