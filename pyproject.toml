@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+exclude = [".venv", "assets", "logs", "memory/discovery_index.json"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501", "B008"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

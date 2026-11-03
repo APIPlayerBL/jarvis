@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Окружение
+.venv/
+venv/
+.env
+
+# Данные и приватные записи
+config/lessons.json
+memory/notes.md
+assets/*.wav
+assets/*.mp3
+temp_voice.mp3
+memory/intents.db
+memory/intents.db-*
+memory/discovery_index.json
+logs/*.log
+logs/*.log.*
+
+# Локальный голос Piper (скачивается setup_tts.py) и кэш озвучки
+assets/piper/
+assets/tts_cache/
+
+# Скриншоты, OCR и браузерный профиль (личные данные)
+assets/screen_*.png
+assets/screen_*.jpg
+assets/check_*.wav
+assets/browser_profile/
+assets/browser_test.png
+assets/youtube_test.png
+assets/vision_test.png
+
+# Прочее
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+# Прямые зависимости Jarvis (проверено на Python 3.12 / Windows 11)
+faster-whisper==1.2.1        # тянет av (декодер mp3 для озвучки) и ctranslate2
+numpy==2.5.4
+sounddevice==0.5.6
+pyttsx3==2.99                # SAPI — офлайн-резерв озвучки
+python-dotenv==1.2.4
+openai==3.40.0               # DeepSeek/Mistral/Groq/OpenRouter + стриминг
+psutil==7.2.2
+pycaw==20260927
+comtypes==1.4.17
+
+# Озвучка: облачные голоса Microsoft (кэшируются). Piper — локально, см. setup_tts.py
+edge-tts==7.3.1
+
+# Экран и зрение
+Pillow==13.0.0
+winsdk==1.0.0b10
+
+# Браузер и управление ПК
+playwright==1.64.1
+PyAutoGUI==0.9.54
+pyperclip==1.11.0
+PyGetWindow==0.0.9
+
+# SOCKS5-прокси (если JARVIS_PROXY=socks5://...)
+socksio==1.0.0
+httpx==0.28.1            # HTTP-?????? ??? ?????? (common.net / brain)

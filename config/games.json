@@ -1,0 +1,9 @@
+{
+  "processes": [
+    "dota2.exe", "cs2.exe", "csgo.exe", "rust.exe", "fortnite.exe",
+    "eldenring.exe", "cyberpunk2077.exe", "witcher3.exe", "gta5.exe",
+    "rocketleague.exe", "apex.exe", "valorant.exe", "warzone.exe"
+  ],
+  "window_substrings": ["dota 2", "counter-strike", "cyberpunk", "elden ring", "rocket league"],
+  "fullscreen_unknown_is_game": false
+}

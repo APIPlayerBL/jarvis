@@ -1,0 +1,132 @@
+{
+  "chrome": {
+    "aliases": [
+      "хром",
+      "хрома",
+      "браузер",
+      "гугл",
+      "chrome",
+      "google chrome"
+    ]
+  },
+  "edge": {
+    "aliases": [
+      "эдж",
+      "edge",
+      "microsoft edge",
+      "microsoft edge browser"
+    ]
+  },
+  "discord": {
+    "aliases": [
+      "дискорд",
+      "дискорда",
+      "discord"
+    ]
+  },
+  "telegram": {
+    "aliases": [
+      "телеграм",
+      "телеграма",
+      "телега",
+      "telegram"
+    ]
+  },
+  "steam": {
+    "aliases": [
+      "стим",
+      "стима",
+      "steam"
+    ]
+  },
+  "spotify": {
+    "aliases": [
+      "спотифай",
+      "spotify"
+    ]
+  },
+  "notepad": {
+    "target": "notepad.exe",
+    "aliases": [
+      "блокнот",
+      "нотпад"
+    ]
+  },
+  "calc": {
+    "target": "calc.exe",
+    "aliases": [
+      "калькулятор"
+    ]
+  },
+  "explorer": {
+    "target": "explorer.exe",
+    "aliases": [
+      "проводник",
+      "эксплорер"
+    ]
+  },
+  "word": {
+    "aliases": [
+      "ворд",
+      "word",
+      "microsoft word"
+    ]
+  },
+  "excel": {
+    "aliases": [
+      "эксель",
+      "excel",
+      "microsoft excel"
+    ]
+  },
+  "vlc": {
+    "aliases": [
+      "vlc",
+      "видеоплеер"
+    ]
+  },
+  "dota 2": {
+    "aliases": [
+      "дота",
+      "доту",
+      "доты",
+      "дотой",
+      "dota",
+      "dota2"
+    ]
+  },
+  "cs2": {
+    "aliases": [
+      "кс2",
+      "кс го",
+      "cs2",
+      "counter-strike 2"
+    ]
+  },
+  "rust": {
+    "aliases": [
+      "раст",
+      "rust"
+    ]
+  },
+  "paint": {
+    "target": "mspaint.exe",
+    "aliases": [
+      "paint",
+      "mspaint",
+      "пеинт",
+      "пейнт",
+      "пэинт",
+      "paint 3d"
+    ]
+  },
+  "vpn": {
+    "target": "ms-settings:network-vpn",
+    "aliases": [
+      "vpn",
+      "v vpn",
+      "впн",
+      "vpn settings"
+    ]
+  }
+}
