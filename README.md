@@ -25,6 +25,16 @@
 
 ## Быстрый старт
 
+Одной командой (создаёт `.venv`, ставит зависимости, готовит `.env`):
+
+```powershell
+python bootstrap.py          # обычный режим
+python bootstrap.py --demo  # без API-ключа, локальные команды работают
+python main.py --text       # проверка без микрофона
+```
+
+Ручной путь (если хочешь):
+
 ```powershell
 cd C:\jarvis
 .\.venv\Scripts\Activate.ps1
